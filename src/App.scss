@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width:100%;
+  display:flex;
+  flex-flow: row nowrap;
+
+  .sideBar {
+    width:345px;
+    max-width: 100%;
+    background: transparent;
+    #search {
+      width: 80%;
+      height: 2rem;
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .venueList {
+      padding:1rem;
+
+      .listItem {
+        color:white;
+        cursor: pointer;
+        list-style: none;
+        font-size: 1rem;
+        display:flex;
+        align-items:center;
+        padding:3rem;
+        background: black;
+        margin-top: 1rem;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+      }
+      .listItem:hover{
+        background:#c0c1c4;
+      }
+    }
+
+
+  }
+}
+
+.icon {
+  font-size: 2em;
+  color:white;
+}
+
+a {
+  color:white;
+  font-size: 40px;
+}
+a:hover {
+  cursor: pointer;
+}
+
+h3 {
+  color:white;
+}
+
+h1 {
+  margin:auto;
+  color:white;
+}
+nav {
+  align-items: center;
+  display:flex;
+  background: black;
+  padding:10px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1em;
+  }
+  .icon{
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .icon {
+    font-size:40px;
+  }
+}
