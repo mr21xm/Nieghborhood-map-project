@@ -16,8 +16,8 @@ function isImageURL(url) {
         if(url.endsWith(type)) {
             isImage = true; break;
         }
-        return isImage;
     }
+    return isImage;
 }
 
 function storeInCache(cacheName, requestClone, responseClone) {

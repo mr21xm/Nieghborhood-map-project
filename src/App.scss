@@ -20,6 +20,8 @@
       padding:1rem;
 
       .listItem {
+
+        max-height: 100vh;
         color:white;
         cursor: pointer;
         list-style: none;
@@ -38,6 +40,11 @@
 
 
   }
+}
+
+.scroll {
+  overflow-y:scroll;
+  height: 100vh;
 }
 
 .icon {

@@ -20,6 +20,7 @@
   padding: 1rem;
 }
 .App .sideBar .venueList .listItem {
+  max-height: 100vh;
   color: white;
   cursor: pointer;
   list-style: none;
@@ -33,6 +34,11 @@
 }
 .App .sideBar .venueList .listItem:hover {
   background: #c0c1c4;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .icon {

@@ -1,3 +1,5 @@
+'use strict';
+
 class Helper {
 	static baseURL() {
 		return "https://api.foursquare.com/v2"
