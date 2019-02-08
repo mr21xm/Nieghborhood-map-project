@@ -67,7 +67,7 @@ handleMarkerClick = marker => {
 
   //  after the component mounted is handles the search of the places that displays on the list and markers and the map's locations
   componentDidMount() {
-    SquareAPI.search({
+    axios.get({
       near: "Abu dhabi, UAE",
       query: "cafe",
       limit:15
