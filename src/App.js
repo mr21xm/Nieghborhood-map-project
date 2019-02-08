@@ -3,6 +3,7 @@ import './App.css';
 import Map from "./component/Map"
 import SquareAPI from "./API/"
 import SideBar from './component/SideBar'
+import axios from 'axios'
 //App component
 class App extends Component {
   //the state of this component
@@ -69,7 +70,7 @@ handleMarkerClick = marker => {
     SquareAPI.search({
       near: "Abu dhabi, UAE",
       query: "cafe",
-      limit:10
+      limit:15
     }).then(results => {
       const {venues} = results.response;
       const {center} = results.response.geocode.feature.geometry;
